@@ -1,0 +1,199 @@
+/* 
+- Tomato: hsl(4, 100%, 67%)
+
+### Neutral
+
+- Dark Slate Grey: hsl(234, 29%, 20%)
+- Charcoal Grey: hsl(235, 18%, 26%)
+- Grey: hsl(231, 7%, 60%)
+- White: hsl(0, 0%, 100%)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(234, 29%, 20%);
+  display: grid;
+  min-height: 100vh;
+  /* justify-content: center; */
+  place-content: center;
+
+  position: relative;
+}
+
+.container {
+  max-width: 70rem;
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+}
+
+.header {
+  font-size: 4rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.list__container {
+  margin-bottom: 2rem;
+}
+
+.list__item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.list__icon:last-child {
+  margin-bottom: 0;
+}
+
+.list__icon {
+  max-width: 15px;
+}
+
+.img__container {
+  max-width: 35rem;
+}
+
+.email__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.email__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.email__label {
+  font-size: 1.2rem;
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+
+.email__error {
+  font-size: 1.2rem;
+  color: hsl(4, 100%, 67%);
+  font-weight: 700;
+}
+
+.btn__error {
+  background-color: hsla(4, 100%, 67%, 0.127);
+  border: 1px solid hsl(4, 100%, 67%);
+}
+
+.email__input {
+  padding: 1.6rem;
+  border-radius: 10px;
+  border: 1px solid hsla(231, 7%, 60%, 0.453);
+  margin-bottom: 1rem;
+}
+
+.email__input:hover {
+  cursor: pointer;
+}
+
+.email__btn {
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 10px;
+  padding: 1.6rem;
+  font-weight: 700;
+  border: none;
+}
+
+.email__btn:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+  transition: background-color 0.3s;
+  box-shadow: 1px 5px 30px hsl(4, 100%, 67%);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 
+///////////////////////////
+Success card
+///////////////////////////
+*/
+
+.success__window {
+  max-width: 40rem;
+  padding: 3rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.display {
+  display: none;
+}
+
+.success__img {
+  width: 10%;
+  margin-bottom: 2rem;
+}
+
+.success__header {
+  font-size: 3.4rem;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 2rem;
+}
+
+.success__info {
+  font-size: 1.4rem;
+  color: hsl(234, 29%, 20%);
+}
+
+.bold__info {
+  font-weight: 700;
+}
+
+.success__btn {
+  font-size: 1.4rem;
+  width: 34rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 10px;
+  padding: 1.6rem;
+  font-weight: 700;
+  border: none;
+  margin-top: 3rem;
+}
+
+.success__btn:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+  transition: background-color 0.3s;
+  box-shadow: 1px 5px 30px hsl(4, 100%, 67%);
+}
